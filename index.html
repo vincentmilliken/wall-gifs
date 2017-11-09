@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Giphy Tabs</title>
+        <meta charset="utf-8" />  
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/tab.js"></script>        
+
+        <style>
+         * {
+             margin: 0;
+             padding: 0;
+             border: 0;
+         }
+
+         body {
+             width: 100%;
+             height: 100%;
+         }
+         .gif {
+             position: fixed;
+             background-color: #000;
+             background: url(img/clear.gif) no-repeat center center fixed;
+             background-size: cover;         
+             width: 100%;
+             height: 100%;
+             cursor: pointer;         
+         }
+         .bug {
+             position: absolute; 
+             z-index: 100; 
+             bottom: 25px; 
+             right: 27px; 
+             height: 40px; 
+             opacity: .5;
+             display: none;
+         }
+        </style>
+</head>
+<body>
+
+    <div id="gif" class="gif" ></div>
+    <img id="bug" class="bug" src="img/giphytv_bug_white.gif"/>
+
+</body>
+
+</html>
